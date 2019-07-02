@@ -1,0 +1,50 @@
+{
+  "connection": "default",
+  "collectionName": "notes",
+  "info": {
+    "name": "note",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "note": {
+      "required": true,
+      "type": "string"
+    },
+    "lat": {
+      "type": "decimal",
+      "required": true
+    },
+    "long": {
+      "type": "decimal",
+      "required": true
+    },
+    "creationDate": {
+      "type": "date"
+    },
+    "popularity": {
+      "type": "decimal",
+      "default": "1.0"
+    },
+    "category": {
+      "type": "string"
+    },
+    "user": {
+      "model": "user",
+      "via": "notes",
+      "plugin": "users-permissions"
+    },
+    "collectors": {
+      "collection": "user",
+      "via": "notes",
+      "plugin": "users-permissions"
+    }
+  }
+}
