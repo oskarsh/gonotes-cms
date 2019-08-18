@@ -605,6 +605,12 @@
                 },
                 "notes": {
                   "type": "string"
+                },
+                "collectedNotes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }

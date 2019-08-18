@@ -574,6 +574,12 @@
               },
               "notes": {
                 "type": "string"
+              },
+              "collectedNotes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -615,6 +621,12 @@
                 },
                 "notes": {
                   "type": "string"
+                },
+                "collectedNotes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }

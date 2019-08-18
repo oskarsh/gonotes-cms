@@ -5,4 +5,16 @@
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+
+    /**
+     * Retrieve a record.
+     *
+     * @return {Object}
+     */
+  
+    // find(ctx) {
+    //   strapi.log.info("Hello find")
+    // },
+
+};

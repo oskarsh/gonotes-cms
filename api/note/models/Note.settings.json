@@ -43,7 +43,8 @@
     },
     "collectors": {
       "collection": "user",
-      "via": "notes",
+      "via": "collectedNotes",
+      "dominant": true,
       "plugin": "users-permissions"
     }
   }

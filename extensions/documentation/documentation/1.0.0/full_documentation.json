@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/02/2019 9:25:12 AM"
+    "x-generation-date": "07/18/2019 6:55:55 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2684,6 +2684,12 @@
               },
               "notes": {
                 "type": "string"
+              },
+              "collectedNotes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -2725,6 +2731,12 @@
                 },
                 "notes": {
                   "type": "string"
+                },
+                "collectedNotes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -2860,6 +2872,12 @@
                 },
                 "notes": {
                   "type": "string"
+                },
+                "collectedNotes": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }
@@ -2995,6 +3013,49 @@
                 }
               }
             }
+          },
+          "collectedNotes": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "note",
+                "lat",
+                "long"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                },
+                "lat": {
+                  "type": "number"
+                },
+                "long": {
+                  "type": "number"
+                },
+                "creationDate": {
+                  "type": "string"
+                },
+                "popularity": {
+                  "type": "number"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "collectors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -3035,6 +3096,12 @@
           },
           "notes": {
             "type": "string"
+          },
+          "collectedNotes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       },

@@ -58,6 +58,10 @@
     },
     "notes": {
       "model": "note",
+      "via": "user"
+    },
+    "collectedNotes": {
+      "collection": "note",
       "via": "collectors"
     }
   }

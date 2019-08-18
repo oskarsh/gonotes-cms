@@ -1201,6 +1201,49 @@
                 }
               }
             }
+          },
+          "collectedNotes": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "note",
+                "lat",
+                "long"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "note": {
+                  "type": "string"
+                },
+                "lat": {
+                  "type": "number"
+                },
+                "long": {
+                  "type": "number"
+                },
+                "creationDate": {
+                  "type": "string"
+                },
+                "popularity": {
+                  "type": "number"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "user": {
+                  "type": "string"
+                },
+                "collectors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
           }
         }
       },
@@ -1241,6 +1284,12 @@
           },
           "notes": {
             "type": "string"
+          },
+          "collectedNotes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }
